@@ -1,0 +1,6 @@
+{% extends 'polls/base.html' %}
+{% load react %}
+
+{% block main %}
+    {% react_render component="App" props=react %}
+{% endblock %}

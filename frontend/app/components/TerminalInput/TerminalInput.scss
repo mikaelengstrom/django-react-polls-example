@@ -1,0 +1,20 @@
+.TerminalInput {
+    position: relative;
+    width: 100%;
+    padding: 10px 30px;
+
+    &__Arrow {
+        color: #587FEC;
+        position: absolute;
+        left: 10px;
+        top: 14px;
+    }
+
+    input {
+        font-size: inherit;
+        color: inherit;
+        outline: none;
+        border: none;
+        width: 100%;
+    }
+}

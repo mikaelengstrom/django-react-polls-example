@@ -1,0 +1,22 @@
+{
+  "question": {
+    "id": 1,
+    "pubDate": "2018-05-31T06:49:15Z",
+    "questionText": "[] + {}",
+    "choices": [
+      {
+        "id": 1,
+        "text": "NaN"
+      },
+      {
+        "id": 2,
+        "text": "[object Object]"
+      },
+      {
+        "id": 3,
+        "text": "undefined"
+      }
+    ]
+  },
+  "voteUrl": "/polls/vote/"
+}

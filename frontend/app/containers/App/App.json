@@ -1,0 +1,6 @@
+{
+  "container": "IndexView",
+  "props": {
+    "first_question_url": "/polls/5"
+  }
+}
