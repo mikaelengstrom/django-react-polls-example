@@ -2,11 +2,10 @@ import React, { PureComponent } from 'react';
 import convertObjectKeysToCamel from '../../utils/CaseConverters';
 
 export default class App extends PureComponent {
-    state = {
-    }
-
     static defaultProps = {
-    }
+        container: null,
+        props: null,
+    };
 
     render() {
         const Container = require('../' + this.props.container).default;

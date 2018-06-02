@@ -1,7 +1,7 @@
 from django.urls import reverse
 from django.views import generic
 from rest_framework.generics import CreateAPIView
-from rest_framework import (authentication, permissions)
+from rest_framework import permissions
 
 from .models import Question
 from .serializers import QuestionSerializer, VoteSerializer
@@ -26,7 +26,7 @@ class ReactMixin(object):
         return self.__class__.__name__
 
     def get_react_props(self):
-        return super(ReactMixin, self).get_react_props()
+        raise NotImplementedError()
 
 
 class IndexView(ReactMixin, generic.TemplateView):
@@ -47,10 +47,6 @@ class DetailView(ReactMixin, generic.DetailView):
             'question': serialized.data,
             'vote_url': reverse('polls:vote')
         }
-
-
-class ResultsView(ReactMixin, generic.DetailView):
-    model = Question
 
 
 class VoteView(CreateAPIView):

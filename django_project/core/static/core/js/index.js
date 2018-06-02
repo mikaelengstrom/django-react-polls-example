@@ -10521,17 +10521,9 @@ var App = function (_PureComponent) {
     _inherits(App, _PureComponent);
 
     function App() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
         _classCallCheck(this, App);
 
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = App.__proto__ || Object.getPrototypeOf(App)).call.apply(_ref, [this].concat(args))), _this), _this.state = {}, _temp), _possibleConstructorReturn(_this, _ret);
+        return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
     }
 
     _createClass(App, [{
@@ -10557,7 +10549,10 @@ var App = function (_PureComponent) {
     return App;
 }(_react.PureComponent);
 
-App.defaultProps = {};
+App.defaultProps = {
+    container: null,
+    props: null
+};
 var _default = App;
 exports.default = _default;
 ;
