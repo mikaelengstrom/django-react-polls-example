@@ -8,14 +8,13 @@ from .serializers import QuestionSerializer, VoteSerializer
 
 
 class ReactMixin(object):
-    template_name = 'polls/react_render.html'
+    template_name = 'polls/base.html'
 
     def get_context_data(self, *args, **kwargs):
         context = super(ReactMixin, self).get_context_data(*args, **kwargs)
-        context['react'] = {
-            'container': self.get_container_name(),
-            'props': self.get_react_props(context)
-        }
+
+        context['react_container'] = self.get_container_name()
+        context['react_props'] = self.get_react_props(context)
 
         return context
 

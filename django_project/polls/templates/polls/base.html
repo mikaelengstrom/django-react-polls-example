@@ -13,6 +13,7 @@
 
 <body onload="document.querySelector('html').classList.remove('no-js');">
     {% block main %}
+        {% react_render component=react_container props=react_props %}
     {% endblock main %}
 
     <script type="text/javascript" src="{% static 'core/js/vendor.js' %}"></script>

@@ -3,8 +3,9 @@ import MessageRow from '../../components/MessageRow';
 import TerminalInput from '../../components/TerminalInput';
 import convertObjectKeysToCamel from '../../utils/CaseConverters';
 import Http from '../../utils/Http';
+import wrapInAppContainer from "../../utils/wrapInBaseContainer";
 
-export default class DetailView extends PureComponent {
+class DetailView extends PureComponent {
     state = {
         currentCommand: '',
         rows: [],
@@ -115,3 +116,5 @@ export default class DetailView extends PureComponent {
         );
     }
 }
+
+export default wrapInAppContainer(DetailView)

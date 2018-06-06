@@ -8,7 +8,7 @@ export default class App extends PureComponent {
     };
 
     render() {
-        const Container = require('../' + this.props.container).default;
+        const Container = this.props.container;
 
         return (
             <div className="App">

@@ -110,3 +110,6 @@ venv.bak/
 django_project/static
 
 Hastur
+django_project/core/static/core/*
+!django_project/core/static/core/.gitkeep
+

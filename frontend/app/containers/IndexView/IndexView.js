@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react';
 import MessageRow from '../../components/MessageRow';
 import TerminalInput from '../../components/TerminalInput';
+import wrapInAppContainer from "../../utils/wrapInBaseContainer";
 
-export default class IndexView extends PureComponent {
+class IndexView extends PureComponent {
     state = {
         currentCommand: '',
         rows: [],
@@ -58,3 +59,5 @@ export default class IndexView extends PureComponent {
         );
     }
 }
+
+export default wrapInAppContainer(IndexView)
