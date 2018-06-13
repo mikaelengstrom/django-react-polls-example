@@ -24,7 +24,7 @@ class ReactMixin(object):
 
         return self.__class__.__name__
 
-    def get_react_props(self):
+    def get_react_props(self, context):
         raise NotImplementedError()
 
 
