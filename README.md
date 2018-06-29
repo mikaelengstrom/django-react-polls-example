@@ -1,5 +1,8 @@
 # Django react polls example
-This is an example implementation of React in Django
+This is an example implementation of a fully React-rendered frontend in Django
+
+It was intended for reference of a Django meetup talk.
+You might find the [slides at Slideshare](https://www.slideshare.net/Frojd/integrating-react-in-django-while-staying-sane-and-happy) helpful
 
 # Installation
 
