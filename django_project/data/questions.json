@@ -1,0 +1,111 @@
+[
+  {
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+      "question_text": "[] + {} in javascript evaluates to the string \"[object Object]\". While there is nothing wrong with that - What would you prefer?"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+      "question_text": "{} + [] in javascript evaluates to 0. What would you prefer?"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+      "question_text": "parseInt('123abc') evaluates to 123. Reasonable, but what would you prefer?"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "text": "NaN"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "text": "[object Object]"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "text": "undefined"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 7,
+    "fields": {
+      "question": 3,
+      "text": "123"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 8,
+    "fields": {
+      "question": 3,
+      "text": "'abc'"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 9,
+    "fields": {
+      "question": 3,
+      "text": "1194684"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 10,
+    "fields": {
+      "question": 3,
+      "text": "ParseError: Could not convert '123abc' to Int"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 11,
+    "fields": {
+      "question": 3,
+      "text": "undefined"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 12,
+    "fields": {
+      "question": 2,
+      "text": "TypeError: Unsupported operand type (+)"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 13,
+    "fields": {
+      "question": 2,
+      "text": "0"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 14,
+    "fields": {
+      "question": 2,
+      "text": "12"
+    }
+  }
+]
