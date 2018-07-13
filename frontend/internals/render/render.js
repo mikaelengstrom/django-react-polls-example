@@ -98,7 +98,7 @@ class Render {
         return evaluatedTemplate;
     }
 
-    getWebpackConfig() {
+    getWebpackConfig(indexFile='./Container.js') {
         const webpackConfigPath = path.resolve(
             this.config.rootFolder,
             this.config.webpackConfig
@@ -121,8 +121,8 @@ class Render {
         const indexOfindexJs = webpackConfig[0].entry.index.findIndex((i) => {
             return i === './index.js'
         });
-        
-        webpackConfig[0].entry.index[indexOfindexJs] = './Container.js';
+
+        webpackConfig[0].entry.index[indexOfindexJs] = indexFile;
         webpackConfig[0].entry.index.unshift(
             `react-hot-loader/patch`,
             `webpack-dev-server/client?http://localhost:${this.config.port}/`, 
@@ -145,7 +145,6 @@ class Render {
             // plugin options
             {
                 injectCss: true,
-                reload: true
             }
         ));
 

@@ -14,7 +14,7 @@
     // Server
     "port": 7000,
     "rootServerTemplatePath": "/internals/templates/server/",
-    "publicPath": "/static/",
+    "publicPath": "/static/core/",
 
     // Cli
     "rootCliTemplatePath": "/internals/templates/cli/",
